@@ -44,7 +44,7 @@ var shell = require('shelljs');
  *
  */
 function loadAllListeners(socket,extension){
-	socket.on('callMe',doAction(socket,extension);
+	socket.on('callMe',doAction(socket,extension));
 	socket.on('prueba',()=>{console.log("prueba correcta");});
 }
 
