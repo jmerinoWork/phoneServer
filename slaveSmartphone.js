@@ -14,9 +14,10 @@ var shell = require('shelljs');
  */
 (async function(){
 
-	if(process.argv.length > 3){
-		console.log("just first argument will be used. Specify ip:port"); //TODO se puede mejorar descripción uso.
-
+	if(process.argv.length >= 3){
+		if(process.argv.length > 3){
+			console.log("just first argument will be used. Specify ip:port"); //TODO se puede mejorar descripción uso.
+		}
 		// 1. Nos conectamos a servidor. (Master de pruebas)
 		var socket = io('http://'+process.argv[2]);
 
