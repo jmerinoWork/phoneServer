@@ -1,5 +1,5 @@
 "use strict";
-var io = require('socket.io');
+var io = require('socket.io-client');
 var shell = require('shelljs');
 //TODO master va a controlar slave smartphone de la misma manera que slave extension??
 
